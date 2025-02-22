@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 body {
@@ -19,10 +20,37 @@ header {
   padding: 1rem;
   text-align: center;
   margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw; /* Full viewport width */
+  max-width: 100%;
+  margin: 0;
+  position: relative; /* Ensure it’s a positioning context */
 }
 
 header h1 {
   font-size: 2rem;
+  margin: 1rem;
+}
+
+/* Hamburger Button */
+.hamburger {
+  display: none; /* Hidden on desktop */
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* Footer */
+footer {
+  background-color: #008080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
 }
 
 /* About Button on Login */
@@ -83,8 +111,8 @@ header h1 {
 
 /* Navbar */
 nav {
-  background-color: #008080; /* Teal */
-  padding: 1rem;
+  background:none;
+  padding: 0;
 }
 
 nav ul {
@@ -196,11 +224,35 @@ button:hover {
   color: #cc0000;
 }
 
-/* Footer */
-footer {
-  background-color: #008080;
-  color: white;
-  padding: 1rem;
-  text-align: center;
-  margin-top: auto;
+/*Mobile Styles*/
+@media (max-width: 768px) {
+  .hamburger {
+    display: block; 
+  }
+
+  nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #008080;
+    width: 200px;
+    display: none; /* Hidden by default */
+    z-index: 1000; /* Ensure it’s above content */
+  }
+
+  nav.open {
+    display: block; /* Show when toggled */
+  
+  }
+
+  nav ul {
+    flex-direction: column;
+    padding: 1rem;
+    margin: 0;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
 }
