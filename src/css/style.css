@@ -1,0 +1,206 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+/* Header */
+header {
+  background-color: #008080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+/* About Button on Login */
+.about-button {
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem;
+  background-color: #e0e0e0;
+  color: #333;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.about-button:hover {
+  background-color: #cccccc;
+}
+
+/* Login */
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.keypad-button {
+  padding: 0.75rem;
+  background-color: #e0e0e0;
+  color: #333;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.keypad-button:hover {
+  background-color: #cccccc;
+}
+
+.keypad-button.clear {
+  background-color: #ff6666;
+  color: white;
+}
+
+.keypad-button.clear:hover {
+  background-color: #e65c5c;
+}
+
+.keypad-button.enter {
+  background-color: #008080;
+  color: white;
+}
+
+.keypad-button.enter:hover {
+  background-color: #006666;
+}
+
+/* Navbar */
+nav {
+  background-color: #008080; /* Teal */
+  padding: 1rem;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a, nav button {
+  color: white;
+  text-decoration: none;
+}
+
+nav button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+nav a:hover, nav button:hover {
+  text-decoration: underline;
+}
+
+/* Main Content */
+main {
+  flex-grow: 1;
+  padding: 2rem;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+input {
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+}
+
+button {
+  padding: 0.5rem;
+  background-color: #008080;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #006666;
+}
+
+/* Main Menu Buttons */
+.menu-button {
+  display: block;
+  padding: 1rem;
+  background-color: #e0f2f2;
+  color: #008080;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 4px;
+}
+
+.menu-button:hover {
+  background-color: #cce6e6;
+}
+
+/* Worklog List */
+.log-list {
+  list-style: none;
+}
+
+.log-item {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.log-item button {
+  background: none;
+  color: #008080;
+  padding: 0 0.5rem;
+}
+
+.log-item .delete {
+  color: #cc0000;
+}
+
+/* Footer */
+footer {
+  background-color: #008080;
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
