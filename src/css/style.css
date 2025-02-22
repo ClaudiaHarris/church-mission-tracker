@@ -5,6 +5,10 @@
   box-sizing: border-box;
   
 }
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
 
 body {
   font-family: Arial, sans-serif;
@@ -32,6 +36,7 @@ header {
 header h1 {
   font-size: 2rem;
   margin: 1rem;
+  min-height: 5vh;
 }
 
 /* Hamburger Button */
@@ -50,7 +55,8 @@ footer {
   color: white;
   padding: 1rem;
   text-align: center;
-  margin-top: auto;
+  flex-shrink: 0;
+ 
 }
 
 /* About Button on Login */
@@ -70,6 +76,9 @@ footer {
 }
 
 /* Login */
+.loginPage .container {
+  max-width: 200px;
+}
 .keypad {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -139,12 +148,14 @@ nav a:hover, nav button:hover {
 
 /* Main Content */
 main {
-  flex-grow: 1;
+  min-height: 79vh;
   padding: 2rem;
+  margin-bottom: 0.5vh;
+  justify-items: center;
 }
 
 .container {
-  max-width: 800px;
+  max-width: 400px;
   margin: 0 auto;
   background: white;
   padding: 1.5rem;
@@ -156,6 +167,11 @@ h2 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   text-align: center;
+}
+
+.bible-verse {
+  padding: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 /* Forms */
@@ -194,6 +210,7 @@ button:hover {
   text-align: center;
   text-decoration: none;
   border-radius: 4px;
+  margin: .5rem;
 }
 
 .menu-button:hover {
@@ -226,6 +243,10 @@ button:hover {
 
 /*Mobile Styles*/
 @media (max-width: 768px) {
+  .main {
+    margin-bottom: -.050;
+
+  }
   .hamburger {
     display: block; 
   }

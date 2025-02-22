@@ -28,6 +28,7 @@ function Layout({ user, setUser }) {
   };
 
   return (
+    
     <>
       <header>
         <h1>{getPageTitle()}</h1>
@@ -45,6 +46,7 @@ function Layout({ user, setUser }) {
       </main>
       <Footer />
     </>
+    
   );
 }
 
