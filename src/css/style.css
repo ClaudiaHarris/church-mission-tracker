@@ -22,15 +22,16 @@ header {
   background-color: #008080;
   color: white;
   padding: 1rem;
+  padding-inline: 20rem;
   text-align: center;
   margin-bottom: 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 100vw; /* Full viewport width */
+  width: 100vw; 
   max-width: 100%;
   margin: 0;
-  position: relative; /* Ensure it’s a positioning context */
+  position: relative; 
 }
 
 header h1 {
@@ -129,6 +130,7 @@ nav ul {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
+  align-items: center;
 }
 
 nav a, nav button {

@@ -20,7 +20,7 @@ function Navbar({ user, setUser, isMenuOpen, setIsMenuOpen }) {
             <li><Link to="/app/userinfo" onClick={() => setIsMenuOpen(false)}>User Info</Link></li>
             <li><Link to="/app/worklog" onClick={() => setIsMenuOpen(false)}>Work Log</Link></li>
             <li><Link to="/app/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
-            <li><button onClick={handleLogout}>Logout</button></li>
+            <li><button id='logout' onClick={handleLogout}>Logout</button></li>
           </>
         ) : (
           <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Login</Link></li>

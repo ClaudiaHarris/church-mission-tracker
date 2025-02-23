@@ -17,13 +17,13 @@ function About() {
         issue. Ensuring the #root element stretched to the bottom 
         of the viewport took multiple iterations due to React’s 
         rendering quirks. 
-        I was most excited to learn about 
-        implementing React.js and using 
-        localStorage for state persistence, which made the app 
-        feel more polished and user-friendly.
+        I was most excited to have completed a small React.js project, and about using 
+        localStorage for state persistence. There is much I would add to this 
+        project if time allowed, but it has been a valuable learning experience.
       </p>
       <p className="bible-verse">
-        "Whoever is kind to the poor lends to the Lord, and he will reward them for what they have done." — Proverbs 19:17 (NIV)
+        "Whoever is kind to the poor lends to the Lord, 
+        and he will reward them for what they have done." — Proverbs 19:17 (NIV)
       </p>
       <p className="author">
         Created by Claudia Harris for CSIS: DevSecOps and Mobile Programming
