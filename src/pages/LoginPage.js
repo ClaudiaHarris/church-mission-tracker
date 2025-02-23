@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function LoginPage({ setUser }) {
   const [password, setPassword] = useState('');
@@ -17,7 +17,7 @@ function LoginPage({ setUser }) {
     e.preventDefault();
     if (password === '1234') {
       alert('Login successful!');
-      setUser({ username: 'Guest'}); // Default user
+      setUser({ firstname: 'Guest'}); // Default user
       navigate('/app');
     } else {
       alert('Invalid password. Please try again.');
@@ -27,6 +27,7 @@ function LoginPage({ setUser }) {
   return (
     <div className="container">
       <h2>Login</h2>
+      
       <form onSubmit={handleLogin}>
         <input
           type="password"
@@ -58,6 +59,7 @@ function LoginPage({ setUser }) {
             Enter
           </button>
         </div>
+        <Link to="/app/about" className="menu-button">About</Link>
       </form>
     </div>
   );

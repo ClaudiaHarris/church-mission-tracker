@@ -6,7 +6,7 @@ function MainMenu({ user }) {
 
   return (
     <div className="container">
-      <h2>Welcome, {user.username}!</h2>
+      <h2>Welcome, {user.firstname}!</h2>
       <p className="bible-verse">
         "Therefore, as God’s chosen people, holy and dearly loved, clothe yourselves with compassion, kindness, humility, gentleness and patience." — Colossians 3:12 (NIV)
       </p>

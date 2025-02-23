@@ -1,3 +1,7 @@
+//Church-mission-tracker, an app that allows users
+//to log donations and volunteer work done, using local storage
+//for data persistence. By Claudia Harris, 2025
+
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
@@ -13,7 +17,10 @@ function App() {
     const savedUser = localStorage.getItem('user');
     return savedUser ? JSON.parse(savedUser) : null;
   });
-  const [logs, setLogs] = useState([]);
+  const [logs, setLogs] = useState(() => {
+    const savedLogs = localStorage.getItem('logs');
+    return savedLogs ? JSON.parse(savedLogs) : [];
+  });
 
   useEffect(() => {
     if (user) {
@@ -22,6 +29,10 @@ function App() {
       localStorage.removeItem('user');
     }
   }, [user]);
+
+  useEffect(() => {
+    localStorage.setItem('logs', JSON.stringify(logs));
+  }, [logs]);
 
   return (
     <Router>

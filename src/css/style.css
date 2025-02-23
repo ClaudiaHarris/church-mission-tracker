@@ -148,9 +148,9 @@ nav a:hover, nav button:hover {
 
 /* Main Content */
 main {
-  min-height: 79vh;
+  min-height: 76vh;
   padding: 2rem;
-  margin-bottom: 0.5vh;
+ 
   justify-items: center;
 }
 
@@ -179,6 +179,7 @@ form {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  
 }
 
 input {
@@ -195,6 +196,8 @@ button {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  margin: 1rem 0 ;
+  
 }
 
 button:hover {
@@ -218,6 +221,10 @@ button:hover {
 }
 
 /* Worklog List */
+.clear-all{
+margin-right: 10px;
+}
+
 .log-list {
   list-style: none;
 }
@@ -230,11 +237,14 @@ button:hover {
   justify-content: space-between;
   margin-bottom: 1rem;
 }
-
+.log-item p{
+  padding: 3px;
+}
 .log-item button {
   background: none;
   color: #008080;
   padding: 0 0.5rem;
+  margin: 5px;
 }
 
 .log-item .delete {
@@ -255,10 +265,11 @@ button:hover {
     position: absolute;
     top: 100%;
     right: 0;
-    background-color: #008080;
+    background-color: #008080ae;
     width: 200px;
     display: none; /* Hidden by default */
     z-index: 1000; /* Ensure it’s above content */
+    font-weight: bold;
   }
 
   nav.open {
